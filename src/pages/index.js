@@ -10,6 +10,7 @@ export const query = graphql `
         node {
         title
         subhead
+        subhead2
         body {
           body
         } 
