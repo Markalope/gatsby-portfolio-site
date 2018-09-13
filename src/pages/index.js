@@ -48,9 +48,9 @@ export default ({data}) =>
 
 <section className={mainStyles.projects}>
 <div className={mainStyles.projectcontainerLeft}>
-        <div className="projecttextLeft">
-          <div className="projectcontents">
-            <h3>Project Name One</h3>
+        <div className={mainStyles.projectextLeft}>
+          <div className={mainStyles.projectcontents}>
+            <h3>Project GitGrub</h3>
             <p>This is the short description of the project, which will display here and invite the user to click for more info.</p>
             <p><a href="#">Click Here for More Info!</a></p>
             <p className={mainStyles.techicons}>
@@ -58,17 +58,17 @@ export default ({data}) =>
             </p>
           </div>
         </div>
-        <div className="projectimage">
-          <img src="computer-fpo.jpg" alt="screen shot of project" />      
+        <div className={mainStyles.projectimage}>
+          <img src="/assets/computer-fpo.jpg" alt="screen shot of project" />      
         </div>
       </div> 
-      <div className="projectcontainerRight">
-          <div className="projectimage">
+      <div className={mainStyles.projectcontainerRight}>
+          <div className={mainStyles.projectimage}>
               <img src="computer-fpo.jpg" alt="screen shot of project" />
             </div>
             <div className="projecttextRight">
-                <div className="projectcontents">
-              <h3>Project Name Two</h3>
+                <div className={mainStyles.projectcontents}>
+              <h3>HALchemy</h3>
               <p>This is the short description of the project, which will display here and invite the user to click for more info.</p>
               <p><a href="#">Click Here for More Info!</a></p>
               <p className={mainStyles.techicons}>
@@ -79,9 +79,9 @@ export default ({data}) =>
           
         </div>  
         <div className={mainStyles.projectcontainerLeft}>
-            <div className="projecttextLeft">
-              <div className="projectcontents">
-                <h3>Project Name Three</h3>
+            <div className={mainStyles.projectextLeft}>
+              <div className={mainStyles.projectcontents}>
+                <h3>Seasonly</h3>
                 <p>This is the short description of the project, which will display here and invite the user to click for more info.</p>
                 <p><a href="#">Click Here for More Info!</a></p>
                 <p className={mainStyles.techicons}>
@@ -89,17 +89,17 @@ export default ({data}) =>
                 </p>
               </div>
             </div>
-            <div className="projectimage">
+            <div className={mainStyles.projectimage}>
               <img src="computer-fpo.jpg" alt="screen shot of project" />      
             </div>
           </div>  
           <div className="projectcontainerRight">
-              <div className="projectimage">
+              <div className={mainStyles.projectimage}>
                   <img src="../assets/computer-fpo.jpg" alt="screen shot of project" />
                 </div>
                 <div className="projecttextRight">
-                    <div className="projectcontents">
-                  <h3>Project Name Four</h3>
+                    <div className={mainStyles.projectcontents}>
+                  <h3>80's Music Smackdown</h3>
                   <p>This is the short description of the project, which will display here and invite the user to click for more info.</p>
                   <p><a href="#">Click Here for More Info!</a></p>
                   <p className={mainStyles.techicons}>
