@@ -2,15 +2,15 @@ import React from "react"
 import  graphql from "gatsby-link"
 import typography from '../utils/typography'
 import { TypographyStyle, GoogleFont } from 'react-typography'
-import mainStyles from "../components/main.module.css"
+import mainStyles from "../components/main.module.scss"
 
 export default ({data}) => 
  <div>
   <section className={mainStyles.header}>
-  <div class="headercontents">
+  <div className={mainStyles.headercontents}>
   <h1>{data.allContentfulBio.edges[0].node.title}</h1>
   <h2>{data.allContentfulBio.edges[0].node.subhead}<br/>{data.allContentfulBio.edges[0].node.subhead2}</h2>
-    <div class="icons-links">
+    <div className={mainStyles.iconslinks}>
         <a target="_blank" href="https://twitter.com/markalope" title="Link to Markalope on Twitter"><i class="fab fa-twitter"></i></a>
       <a target="_blank" href="https://www.linkedin.com/in/markalope" title="Link to Mark Myers on LinkedIn"><i class="fab fa-linkedin"></i></a>
       <a target="_blank" href="https://github.com/markalope" title="Link to Mark Myers GitHub Profile"><i class="fab fa-github"></i></a>
