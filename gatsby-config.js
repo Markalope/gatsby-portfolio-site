@@ -6,7 +6,7 @@ const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Mark Myers :: Javascript Developer in Portland, OR',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
