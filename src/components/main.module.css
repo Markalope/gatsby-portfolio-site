@@ -1,0 +1,188 @@
+
+$middle-grey: #67696E;
+$light-cool-grey: #738D9C;
+$cream: #F4EEE2;
+$dark-cool-grey: #354751;
+$accent-gold: #FFCC00;
+
+p {
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4em;
+  color: $dark-cool-grey;
+}
+
+h1 {
+  font-family: 'Dosis', sans-serif;
+  color: $dark-cool-grey;
+  margin: 0;
+  font-size: 4.8em;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+h2 {
+  font-family: 'Dosis', sans-serif;
+  color: white;
+  font-size: 2.2em;
+  font-weight: 600;
+  margin: 0;
+}
+
+h3 {
+  font-family: 'Dosis', sans-serif;
+  color: white;
+  font-size: 1.8em;
+  font-weight: 600;
+  margin: 0;
+}
+
+
+.header {
+  display: grid;
+  text-align: center;
+  background-image: url("../assets/header.jpg");
+  min-height: 400px;
+}
+
+.headercontents
+{
+  align-self: center;
+  justify-self: center;
+}
+
+.icons-links {
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+.icons-links a {
+  color: white;
+
+}
+
+a:hover {
+  color: $accent-gold;
+}
+
+.bio {
+  text-align: center;
+  background-color: $light-cool-grey;
+  padding: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+  line-height: 1.8em;
+}
+
+.bio > p {
+  color: white;
+  font-weight: 400;
+  font-size: 1.4em;
+}
+
+.projects {
+  background-color:$middle-grey;
+  background-image: url("../assets/black-orchid.png");
+  text-align: center;
+}
+
+.techicons {
+  font-size: 2.2em;
+}
+
+.projects a {
+  color: white;
+  text-decoration: none;
+}
+
+.projects a:hover {
+  color: $accent-gold;
+}
+
+.projects h3 {
+  padding-top: 5%;
+}
+
+.projects p {
+  padding-right: 3%;
+  color: white;
+  text-align: center;
+}
+
+.projectcontainer-right {
+  display: flex;
+  justify-content: center;
+
+}
+
+.projectcontainer-left {
+  display: flex;
+  justify-content: center;
+
+}
+
+.projecttext-left {
+  display: flex;
+  max-width: 500px;
+  background-color: $middle-grey;
+
+}
+
+.projecttext-right {
+  display: flex;
+  max-width: 500px;
+  background-color: $light-cool-grey;
+
+}
+
+.projectcontents
+{
+  align-self: center;
+  justify-self: center;
+}
+
+.projectimage {
+  background-size: contain;
+  background-size: cover;
+}
+
+.projectimage img {
+  max-width: 100%;
+}
+
+.topnavbar {
+  text-align: right;
+  display: block;
+   position: fixed;
+  background: $cream;
+  width: 100%;
+}
+
+.topnavbar .icons-links {
+  font-size: 1.2em;
+  margin-top: 0;
+  margin-right: 20px;
+}
+
+.topnavbar .icons-links a {
+  color: $dark-cool-grey;
+}
+
+.topnavbar .icons-links a:hover {
+  color: $accent-gold;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background: $cream;
+  width: 100%;
+}
+
+.footer p {
+  font-size: 1em;
+  padding-left: 5%;
+  padding-right: 5%;
+}

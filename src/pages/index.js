@@ -2,10 +2,11 @@ import React from "react"
 import  graphql from "gatsby-link"
 import typography from '../utils/typography'
 import { TypographyStyle, GoogleFont } from 'react-typography'
+import mainStyles from "../components/main.module.css"
 
-export default ({data}) => <div>
-  
-  <section class="header">
+export default ({data}) => 
+ <div>
+  <section className={mainStyles.header}>
   <div class="headercontents">
   <h1>{data.allContentfulBio.edges[0].node.title}</h1>
   <h2>{data.allContentfulBio.edges[0].node.subhead}<br/>{data.allContentfulBio.edges[0].node.subhead2}</h2>
@@ -19,10 +20,11 @@ export default ({data}) => <div>
     </div>  
 </section>
 
-<section class="bio">
+<section className={mainStyles.bio}>
     <p>{data.allContentfulBio.edges[0].node.body.body}</p>
 </section>
 </div>
+
 
 export const query = graphql `
   query BioQuery {
