@@ -1,3 +1,8 @@
+require('dotenv').config();
+
+const SPACE_ID = process.env.SPACE_ID;
+const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
+
 
 module.exports = {
   siteMetadata: {
@@ -15,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `8iy48macnh5d`,
-        accessToken: `1b10f6c7613241668d0f762bd64497e44b0738cd3b2eee77182dce7ef3874ded`,
+        spaceId: SPACE_ID,
+        accessToken: ACCESS_TOKEN,
       },
     }
 ],
