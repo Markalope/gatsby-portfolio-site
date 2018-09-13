@@ -46,14 +46,14 @@ export default ({data}) =>
     <p>{data.allContentfulBio.edges[0].node.body.body}</p>
 </section>
 
-<section className="projects">
-<div className="projectcontainer-left">
-        <div className="projecttext-left">
+<section className={mainStyles.projects}>
+<div className={mainStyles.projectcontainerLeft}>
+        <div className="projecttextLeft">
           <div className="projectcontents">
             <h3>Project Name One</h3>
             <p>This is the short description of the project, which will display here and invite the user to click for more info.</p>
             <p><a href="#">Click Here for More Info!</a></p>
-            <p className="techicons">
+            <p className={mainStyles.techicons}>
               <i className="fab fa-react"></i> <i className="fab fa-node-js"></i>
             </p>
           </div>
@@ -62,29 +62,29 @@ export default ({data}) =>
           <img src="computer-fpo.jpg" alt="screen shot of project" />      
         </div>
       </div> 
-      <div className="projectcontainer-right">
+      <div className="projectcontainerRight">
           <div className="projectimage">
               <img src="computer-fpo.jpg" alt="screen shot of project" />
             </div>
-            <div className="projecttext-right">
+            <div className="projecttextRight">
                 <div className="projectcontents">
               <h3>Project Name Two</h3>
               <p>This is the short description of the project, which will display here and invite the user to click for more info.</p>
               <p><a href="#">Click Here for More Info!</a></p>
-              <p className="techicons">
+              <p className={mainStyles.techicons}>
                 <i className="fab fa-react"></i> <i className="fab fa-node-js"></i>
               </p>
           </div>
           </div>
           
         </div>  
-        <div className="projectcontainer-left">
-            <div className="projecttext-left">
+        <div className={mainStyles.projectcontainerLeft}>
+            <div className="projecttextLeft">
               <div className="projectcontents">
                 <h3>Project Name Three</h3>
                 <p>This is the short description of the project, which will display here and invite the user to click for more info.</p>
                 <p><a href="#">Click Here for More Info!</a></p>
-                <p className="techicons">
+                <p className={mainStyles.techicons}>
                   <i className="fab fa-react"></i> <i className="fab fa-node-js"></i>
                 </p>
               </div>
@@ -93,16 +93,16 @@ export default ({data}) =>
               <img src="computer-fpo.jpg" alt="screen shot of project" />      
             </div>
           </div>  
-          <div className="projectcontainer-right">
+          <div className="projectcontainerRight">
               <div className="projectimage">
-                  <img src="computer-fpo.jpg" alt="screen shot of project" />
+                  <img src="../assets/computer-fpo.jpg" alt="screen shot of project" />
                 </div>
-                <div className="projecttext-right">
+                <div className="projecttextRight">
                     <div className="projectcontents">
                   <h3>Project Name Four</h3>
                   <p>This is the short description of the project, which will display here and invite the user to click for more info.</p>
                   <p><a href="#">Click Here for More Info!</a></p>
-                  <p className="techicons">
+                  <p className={mainStyles.techicons}>
                     <i className="fab fa-react"></i> <i className="fab fa-node-js"></i>
                   </p>
               </div>

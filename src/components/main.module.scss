@@ -35,7 +35,7 @@ h3 {
   color: white;
   font-size: 1.8em;
   font-weight: 600;
-  margin: 0;
+  
 }
 
 
@@ -111,26 +111,26 @@ a:hover {
   text-align: center;
 }
 
-.projectcontainer-right {
+.projectcontainerRight {
   display: flex;
   justify-content: center;
 
 }
 
-.projectcontainer-left {
+.projectcontainerLeft {
   display: flex;
   justify-content: center;
 
 }
 
-.projecttext-left {
+.projecttextLeft {
   display: flex;
   max-width: 500px;
   background-color: $middle-grey;
 
 }
 
-.projecttext-right {
+.projecttextRight {
   display: flex;
   max-width: 500px;
   background-color: $light-cool-grey;
@@ -157,6 +157,7 @@ a:hover {
   display: block;
    position: fixed;
   background: $cream;
+  padding-top: 10px;
   width: 100%;
 }
 
