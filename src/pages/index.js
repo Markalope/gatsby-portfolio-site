@@ -8,11 +8,16 @@ import mainStyles from "../components/main.module.scss"
 export default ({data}) => 
  <div>
    <Helmet>
-            <meta charSet="utf-8" />
-            <title>Mark Myers :: Javascript Developer in Portland OR</title>
-            <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" />
-
-    </Helmet>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Mark Myers is a full-stack Javascript developer and digital project manager currently seeking a development position in Portland, OR." />
+    <meta name="geo.region" content="US-OR" />
+    <meta name="geo.placename" content="Portland" />
+    <meta name="geo.position" content="45.512231;-122.658719" />
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" />
+    <title>Mark Myers :: Javascript Developer in Portland OR</title>
+  </Helmet>
   <section className={mainStyles.header}>
   <div className={mainStyles.headercontents}>
   <h1>{data.allContentfulBio.edges[0].node.title}</h1>
