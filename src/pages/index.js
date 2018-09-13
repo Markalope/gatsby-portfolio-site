@@ -52,10 +52,10 @@ export default ({data}) =>
         <div className={mainStyles.projecttextLeft}>
           <div className={mainStyles.projectcontents}>
             <h3>Project GitGrub</h3>
-            <p>This is the short description of the project, which will display here and invite the user to click for more info.</p>
-            <p><a href="#">Click Here for More Info!</a></p>
+            <p>A reality-show inspired cooking challenge game. Built in 'vanilla' Javascript. This was the final project for the first four-week session (201) at Alchemy Code Lab.</p>
+            <p><a href="https://teamcalendar.github.io/projectgitgrub/" target="_blank">Click Here to Play the Game!</a></p>
             <p className={mainStyles.techicons}>
-              <i className="fab fa-react"></i> <i className="fab fa-node-js"></i>
+              <i className="fas fa-code"></i> <i className="fab fa-css3-alt"></i> <i className="fab fa-js-square"></i>
             </p>
           </div>
         </div>
@@ -73,7 +73,7 @@ export default ({data}) =>
               <p>This is the short description of the project, which will display here and invite the user to click for more info.</p>
               <p><a href="#">Click Here for More Info!</a></p>
               <p className={mainStyles.techicons}>
-                <i className="fab fa-react"></i> <i className="fab fa-node-js"></i>
+                <i className="fas fa-code"></i> <i className="fab fa-node-js"></i>
               </p>
           </div>
           </div>
@@ -86,7 +86,7 @@ export default ({data}) =>
                 <p>This is the short description of the project, which will display here and invite the user to click for more info.</p>
                 <p><a href="#">Click Here for More Info!</a></p>
                 <p className={mainStyles.techicons}>
-                  <i className="fab fa-react"></i> <i className="fab fa-node-js"></i>
+                  <i className="fab fa-js-square"></i> <i className="fab fa-vuejs"></i>
                 </p>
               </div>
             </div>
@@ -104,7 +104,7 @@ export default ({data}) =>
                   <p>This is the short description of the project, which will display here and invite the user to click for more info.</p>
                   <p><a href="#">Click Here for More Info!</a></p>
                   <p className={mainStyles.techicons}>
-                    <i className="fab fa-react"></i> <i className="fab fa-node-js"></i>
+                  <i className="fas fa-code"></i> <i className="fab fa-css3-alt"></i> <i className="fab fa-js-square"></i>
                   </p>
               </div>
               </div>         
@@ -137,3 +137,4 @@ export const query = graphql `
     }
   }
 } `
+
