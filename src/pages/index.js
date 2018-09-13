@@ -1,6 +1,7 @@
 import React from "react"
 import  graphql from "gatsby-link"
 import typography from '../utils/typography'
+import computerFPO from '../assets/computer-fpo.jpg'
 import { Helmet } from "react-helmet"
 import { TypographyStyle, GoogleFont } from 'react-typography'
 import mainStyles from "../components/main.module.scss"
@@ -48,7 +49,7 @@ export default ({data}) =>
 
 <section className={mainStyles.projects}>
 <div className={mainStyles.projectcontainerLeft}>
-        <div className={mainStyles.projectextLeft}>
+        <div className={mainStyles.projecttextLeft}>
           <div className={mainStyles.projectcontents}>
             <h3>Project GitGrub</h3>
             <p>This is the short description of the project, which will display here and invite the user to click for more info.</p>
@@ -59,14 +60,14 @@ export default ({data}) =>
           </div>
         </div>
         <div className={mainStyles.projectimage}>
-          <img src="/assets/computer-fpo.jpg" alt="screen shot of project" />      
+          <img src={computerFPO} alt="screen shot of project" />      
         </div>
       </div> 
       <div className={mainStyles.projectcontainerRight}>
           <div className={mainStyles.projectimage}>
-              <img src="computer-fpo.jpg" alt="screen shot of project" />
+              <img src={computerFPO} alt="screen shot of project" />
             </div>
-            <div className="projecttextRight">
+            <div className={mainStyles.projecttextRight}>
                 <div className={mainStyles.projectcontents}>
               <h3>HALchemy</h3>
               <p>This is the short description of the project, which will display here and invite the user to click for more info.</p>
@@ -79,7 +80,7 @@ export default ({data}) =>
           
         </div>  
         <div className={mainStyles.projectcontainerLeft}>
-            <div className={mainStyles.projectextLeft}>
+            <div className={mainStyles.projecttextLeft}>
               <div className={mainStyles.projectcontents}>
                 <h3>Seasonly</h3>
                 <p>This is the short description of the project, which will display here and invite the user to click for more info.</p>
@@ -90,14 +91,14 @@ export default ({data}) =>
               </div>
             </div>
             <div className={mainStyles.projectimage}>
-              <img src="computer-fpo.jpg" alt="screen shot of project" />      
+              <img src={computerFPO} alt="screen shot of project" />      
             </div>
           </div>  
-          <div className="projectcontainerRight">
+          <div className={mainStyles.projectcontainerRight}>
               <div className={mainStyles.projectimage}>
-                  <img src="../assets/computer-fpo.jpg" alt="screen shot of project" />
+                  <img src={computerFPO} alt="screen shot of project" />
                 </div>
-                <div className="projecttextRight">
+                <div className={mainStyles.projecttextRight}>
                     <div className={mainStyles.projectcontents}>
                   <h3>80's Music Smackdown</h3>
                   <p>This is the short description of the project, which will display here and invite the user to click for more info.</p>
