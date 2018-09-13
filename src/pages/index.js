@@ -5,6 +5,8 @@ import computerFPO from '../assets/computer-fpo.jpg'
 import { Helmet } from "react-helmet"
 import { TypographyStyle, GoogleFont } from 'react-typography'
 import mainStyles from "../components/main.module.scss"
+import Footer from "../components/Footer"
+import Topnavbar from "../components/Topnavbar"
 
 export default ({data}) => 
  <div>
@@ -20,15 +22,8 @@ export default ({data}) =>
     <title>Mark Myers :: Javascript Developer in Portland OR</title>
   </Helmet>
 
-  <section className={mainStyles.topnavbar}>
-        <div className={mainStyles.iconslinks}> <p>Mark Myers :: Javascript Developer in Portland, OR &nbsp; &nbsp; 
-      
-          <a target="_blank" href="https://twitter.com/markalope" title="Link to Markalope on Twitter"><i className="fab fa-twitter"></i></a>
-          <a target="_blank" href="https://www.linkedin.com/in/markalope" title="Link to Mark Myers on LinkedIn"><i className="fab fa-linkedin"></i></a>
-          <a target="_blank" href="https://github.com/markalope" title="Link to Mark Myers GitHub Profile"><i className="fab fa-github"></i></a>
-          <a target="_blank" href="mailto:markalope@gmail.com" title="Email link for Markalope@gmail.com"><i className="fas fa-envelope-square"></i></a>
-        </p></div>
-  </section>
+  <Topnavbar />
+
 
   <section className={mainStyles.header}>
   <div className={mainStyles.headercontents}>
@@ -112,9 +107,7 @@ export default ({data}) =>
 
 </section>
 
-<section className={mainStyles.footer}>
-  <p>HTML/CSS | Javascript - Express, Node, Vue, React/Redux, Gatsby | Test-Driven Development (TDD) with Mocha, Chai and Jest | PostgreSQL, MongoDB with Mongoose | VSCode and CLI/BASH | Git, GitHub, Heroku, Netlify</p>
-</section>
+<Footer />
 
 
 {/* ***** DO NOT MOVE THIS DIV - IT IS THE ENCLOSING DIV *** */}
