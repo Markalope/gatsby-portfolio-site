@@ -8,7 +8,7 @@ export default ({data}) => <div>
   <section class="header">
   <div class="headercontents">
   <h1>{data.allContentfulBio.edges[0].node.title}</h1>
-  <h2>{data.allContentfulBio.edges[0].node.subhead}</h2>
+  <h2>{data.allContentfulBio.edges[0].node.subhead}<br/>{data.allContentfulBio.edges[0].node.subhead2}</h2>
     <div class="icons-links">
         <a target="_blank" href="https://twitter.com/markalope" title="Link to Markalope on Twitter"><i class="fab fa-twitter"></i></a>
       <a target="_blank" href="https://www.linkedin.com/in/markalope" title="Link to Mark Myers on LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -31,6 +31,7 @@ export const query = graphql `
         node {
         title
         subhead
+        subhead2
         
         body {
           body
