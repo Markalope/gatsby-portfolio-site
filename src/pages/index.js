@@ -109,7 +109,6 @@ export default ({data}) =>
 
 <Footer />
 
-
 {/* ***** DO NOT MOVE THIS DIV - IT IS THE ENCLOSING DIV *** */}
 </div>
 {/* ***** DO NOT MOVE THIS DIV - IT IS THE ENCLOSING DIV *** */}
