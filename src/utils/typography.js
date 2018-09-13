@@ -6,7 +6,6 @@ const typography = new Typography(
   baseLineHeight: 1.45,
   headerFontFamily: [
     "Dosis",
-    
     "sans-serif",
   ],
   bodyFontFamily: ["Dosis", "serif"],
