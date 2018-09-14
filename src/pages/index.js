@@ -7,6 +7,7 @@ import { TypographyStyle, GoogleFont } from 'react-typography'
 import mainStyles from "../components/main.module.scss"
 import Footer from "../components/Footer"
 import Topnavbar from "../components/Topnavbar"
+import IconsLinks from "../components/IconsLinks"
 
 export default ({data}) => 
  <div>
@@ -24,19 +25,13 @@ export default ({data}) =>
 
   <Topnavbar />
 
-
   <section className={mainStyles.header}>
-  <div className={mainStyles.headercontents}>
-  <h1>{data.allContentfulBio.edges[0].node.title}</h1>
-  <h2>{data.allContentfulBio.edges[0].node.subhead}<br/>{data.allContentfulBio.edges[0].node.subhead2}</h2>
-    <div className={mainStyles.iconslinks}>
-        <a target="_blank" href="https://twitter.com/markalope" title="Link to Markalope on Twitter"><i className="fab fa-twitter"></i></a>
-      <a target="_blank" href="https://www.linkedin.com/in/markalope" title="Link to Mark Myers on LinkedIn"><i className="fab fa-linkedin"></i></a>
-      <a target="_blank" href="https://github.com/markalope" title="Link to Mark Myers GitHub Profile"><i className="fab fa-github"></i></a>
-      <a target="_blank" href="mailto:markalope@gmail.com" title="Email link for Markalope@gmail.com"><i className="fas fa-envelope-square"></i></a>
-      </div>
-    </div>  
-</section>
+        <div className={mainStyles.headercontents}>
+        <h1>{data.allContentfulBio.edges[0].node.title}</h1>
+        <h2>{data.allContentfulBio.edges[0].node.subhead}<br/>{data.allContentfulBio.edges[0].node.subhead2}</h2>
+        <IconsLinks />
+        </div>  
+      </section>
 
 <section className={mainStyles.bio}>
     <p>{data.allContentfulBio.edges[0].node.body.body}</p>
@@ -89,8 +84,11 @@ export default ({data}) =>
               <img src={computerFPO} alt="screen shot of project" />      
             </div>
           </div>  
-          <div className={mainStyles.projectcontainerRight}>
-              <div className={mainStyles.projectimage}>
+
+{/* COMMENTING THIS ONE OUT UNTIL I COMPLETE THIS APP*/}
+
+          {/* <div className={mainStyles.projectcontainerRight}> */}
+              {/* <div className={mainStyles.projectimage}>
                   <img src={computerFPO} alt="screen shot of project" />
                 </div>
                 <div className={mainStyles.projecttextRight}>
@@ -103,7 +101,7 @@ export default ({data}) =>
                   </p>
               </div>
               </div>         
-            </div>       
+            </div>        */}
 
 </section>
 
@@ -114,7 +112,7 @@ export default ({data}) =>
 {/* ***** DO NOT MOVE THIS DIV - IT IS THE ENCLOSING DIV *** */}
 
 export const query = graphql `
-  query BioQuery {
+  query IndexQuery {
     allContentfulBio {
       edges {
         node {
