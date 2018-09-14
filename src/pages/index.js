@@ -107,24 +107,33 @@ export default ({data}) =>
 
 <Footer />
 
-{/* ***** DO NOT MOVE THIS DIV - IT IS THE ENCLOSING DIV *** */}
 </div>
-{/* ***** DO NOT MOVE THIS DIV - IT IS THE ENCLOSING DIV *** */}
 
 export const query = graphql `
   query IndexQuery {
     allContentfulBio {
       edges {
         node {
-        title
-        subhead
-        subhead2
-        
-        body {
-          body
-        } 
+          title
+          subhead
+          subhead2
+          body {
+            body
+          }
+        }
       }
     }
-  }
-} `
+    allContentfulProject {
+      edges {
+        node {
+          projectName
+          projectShortDescription {
+            projectShortDescription
+          }
+          links
+        }
+      }
+    }
+    }
+`
 
