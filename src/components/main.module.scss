@@ -9,6 +9,15 @@ $accent-gold: #FFCC00;
   div.projectimage {
     display: none;
   }
+  
+}
+
+@media screen and (max-width: 600px) {
+  section.topnavbar .iconslinks div::before {
+    content: "Mark Myers  - ";
+    font-size: .8em;
+  }
+  
 }
 
 p {
@@ -173,10 +182,8 @@ a:hover {
   color: $dark-cool-grey;
 }
 
-
-
 .topnavbar .iconslinks div::before {
-  content: "Mark Myers : Javascript Developer in Portland, OR  -- ";
+  content: "Mark Myers : Portland, OR  -- ";
   font-size: .8em;
 }
 
