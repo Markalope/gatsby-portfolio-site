@@ -173,6 +173,13 @@ a:hover {
   color: $dark-cool-grey;
 }
 
+
+
+.topnavbar .iconslinks div::before {
+  content: "Mark Myers : Javascript Developer in Portland, OR  -- ";
+  font-size: .8em;
+}
+
 .topnavbar .iconslinks a:hover {
   color: #2ed4e6f0;
 }
