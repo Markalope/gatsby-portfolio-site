@@ -5,6 +5,12 @@ $cream: #F4EEE2;
 $dark-cool-grey: #354751;
 $accent-gold: #FFCC00;
 
+@media screen and (max-width: 600px) {
+  div.projectimage {
+    display: none;
+  }
+}
+
 p {
   font-family: 'Dosis', sans-serif;
   font-size: 20px;

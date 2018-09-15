@@ -41,9 +41,9 @@ export default ({data}) =>
 <div className={mainStyles.projectcontainerLeft}>
         <div className={mainStyles.projecttextLeft}>
           <div className={mainStyles.projectcontents}>
-            <h3>Project GitGrub</h3>
-            <p>A reality-show inspired cooking challenge game. Built in 'vanilla' Javascript. This was the final project for the first four-week session (201) at Alchemy Code Lab.</p>
-            <p><a href="https://teamcalendar.github.io/projectgitgrub/" target="_blank">Click Here to Play the Game!</a></p>
+            <h3>{data.allContentfulProject.edges[0].node.projectName}</h3>
+            <p>{data.allContentfulProject.edges[0].node.projectShortDescription.projectShortDescription}</p>
+            <p><a href={data.allContentfulProject.edges[0].node.links[0]} target="_blank">Click Here to Play the Game!</a></p>
             <p className={mainStyles.techicons}>
               <i className="fas fa-code"></i> <i className="fab fa-css3-alt"></i> <i className="fab fa-js-square"></i>
             </p>
@@ -59,7 +59,7 @@ export default ({data}) =>
             </div>
             <div className={mainStyles.projecttextRight}>
                 <div className={mainStyles.projectcontents}>
-              <h3>HALchemy</h3>
+              <h3>{data.allContentfulProject.edges[0].node.projectName}</h3>
               <p>This is the short description of the project, which will display here and invite the user to click for more info.</p>
               <p><a href="#">Click Here for More Info!</a></p>
               <p className={mainStyles.techicons}>
