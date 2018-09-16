@@ -142,6 +142,7 @@ a:hover {
 .projecttextLeft {
   display: flex;
   max-width: 500px;
+  max-height: 500px;
   background-color: $middle-grey;
 
 }
@@ -149,6 +150,7 @@ a:hover {
 .projecttextRight {
   display: flex;
   max-width: 500px;
+  max-height: 500px;
   background-color: $light-cool-grey;
 
 }

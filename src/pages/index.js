@@ -59,9 +59,9 @@ export default ({data}) =>
             </div>
             <div className={mainStyles.projecttextRight}>
                 <div className={mainStyles.projectcontents}>
-              <h3>{data.allContentfulProject.edges[0].node.projectName}</h3>
-              <p>This is the short description of the project, which will display here and invite the user to click for more info.</p>
-              <p><a href="#">Click Here for More Info!</a></p>
+              <h3>{data.allContentfulProject.edges[1].node.projectName}</h3>
+              <p>{data.allContentfulProject.edges[1].node.projectShortDescription.projectShortDescription}</p>
+              <p><a href={data.allContentfulProject.edges[1].node.links[0]}>Click Here for More Info!</a></p>
               <p className={mainStyles.techicons}>
                 <i className="fas fa-code"></i> <i className="fab fa-node-js"></i>
               </p>
