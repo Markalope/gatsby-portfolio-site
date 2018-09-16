@@ -61,7 +61,7 @@ export default ({data}) =>
                 <div className={mainStyles.projectcontents}>
               <h3>{data.allContentfulProject.edges[1].node.projectName}</h3>
               <p>{data.allContentfulProject.edges[1].node.projectShortDescription.projectShortDescription}</p>
-              <p><a href={data.allContentfulProject.edges[1].node.links[0]}>Click Here for More Info!</a></p>
+              <p><a href={data.allContentfulProject.edges[1].node.links[0]}>Click Here to Play!</a></p>
               <p className={mainStyles.techicons}>
                 <i className="fas fa-code"></i> <i className="fab fa-node-js"></i>
               </p>
@@ -72,9 +72,9 @@ export default ({data}) =>
         <div className={mainStyles.projectcontainerLeft}>
             <div className={mainStyles.projecttextLeft}>
               <div className={mainStyles.projectcontents}>
-                <h3>Seasonly</h3>
-                <p>This is the short description of the project, which will display here and invite the user to click for more info.</p>
-                <p><a href="#">Click Here for More Info!</a></p>
+                <h3>{data.allContentfulProject.edges[2].node.projectName}</h3>
+                <p>{data.allContentfulProject.edges[2].node.projectShortDescription.projectShortDescription}</p>
+                <p><a href={data.allContentfulProject.edges[1].node.links[2]}>Click Here to View!</a></p>
                 <p className={mainStyles.techicons}>
                   <i className="fab fa-js-square"></i> <i className="fab fa-vuejs"></i>
                 </p>
