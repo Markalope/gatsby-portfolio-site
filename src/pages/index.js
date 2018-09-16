@@ -74,7 +74,7 @@ export default ({data}) =>
               <div className={mainStyles.projectcontents}>
                 <h3>{data.allContentfulProject.edges[2].node.projectName}</h3>
                 <p>{data.allContentfulProject.edges[2].node.projectShortDescription.projectShortDescription}</p>
-                <p><a href={data.allContentfulProject.edges[1].node.links[2]}>Click Here to View!</a></p>
+                <p><a href={data.allContentfulProject.edges[2].node.links[0]}>Click Here to View!</a></p>
                 <p className={mainStyles.techicons}>
                   <i className="fab fa-js-square"></i> <i className="fab fa-vuejs"></i>
                 </p>
