@@ -1,7 +1,9 @@
 import React from "react"
 import  graphql from "gatsby-link"
 import typography from '../utils/typography'
-import computerFPO from '../assets/computer-fpo.jpg'
+import gitGrub from '../assets/gitgrub.jpg'
+import Seasonly from '../assets/seasonly.jpg'
+import Halchemy from '../assets/Halchemy.jpg'
 import { Helmet } from "react-helmet"
 import { TypographyStyle, GoogleFont } from 'react-typography'
 import mainStyles from "../components/main.module.scss"
@@ -50,12 +52,12 @@ export default ({data}) =>
           </div>
         </div>
         <div className={mainStyles.projectimage}>
-          <img src={computerFPO} alt="screen shot of project" />      
+          <img src={gitGrub} alt="screen shot of project" />      
         </div>
       </div> 
       <div className={mainStyles.projectcontainerRight}>
           <div className={mainStyles.projectimage}>
-              <img src={computerFPO} alt="screen shot of project" />
+              <img src={Halchemy} alt="screen shot of project" />
             </div>
             <div className={mainStyles.projecttextRight}>
                 <div className={mainStyles.projectcontents}>
@@ -81,7 +83,7 @@ export default ({data}) =>
               </div>
             </div>
             <div className={mainStyles.projectimage}>
-              <img src={computerFPO} alt="screen shot of project" />      
+              <img src={Seasonly} alt="screen shot of project" />      
             </div>
           </div>  
 

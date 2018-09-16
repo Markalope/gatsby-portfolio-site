@@ -117,12 +117,9 @@ a:hover {
   color: $accent-gold;
 }
 
-.projects h3 {
-  padding-top: 5%;
-}
-
 .projects p {
   padding-right: 3%;
+  padding-left: 3%;
   color: white;
   text-align: center;
 }
@@ -163,6 +160,7 @@ a:hover {
 
 .projectimage img {
   max-width: 100%;
+  width: 500px;
 }
 
 .topnavbar {
